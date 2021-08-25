@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="RoachGames.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--Including Libraries Files--%>
+    <%--Bootstrap css--%>
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--DataTables css--%>
+    <link href="DataTable/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--Font Awesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+
+    <%--Including Jquery Libraries Files--%>
+    <%--Jquery--%>
+    <script src="Bootstrap/js/jquery-3.6.0.min.js"></script>
+    <%--popper.js--%>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <%--bootstrap.js--%>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <%--Sweetalert Dialog--%>
+    <script src="sweetalert/jquery-3.6.0.min.js"></script>
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+
+    <%--Custom Css--%>
+    <link href="css/CustomStyleSheet.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid" id="social-media">
+            <div class="row">
+
+                <div class="col-md-3" style="text-align: center">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true" id="facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true" id="twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true" id="google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true" id="linked-in"></i></a>
+                </div>
+
+                <div class="col-md-4" style="text-align: center">
+                    <a href="#"><i class="fa fa-skype" aria-hidden="true" id="skype">
+                        <span>live:Roach Games</span></i></a>
+
+                    <a href="#"><i class="fa fa-whatsapp" aria-hidden="true" id="whatsapp">
+                     <span>+233-240-000-000</span></i></a>
+                </div>
+
+                <div class="col-md-4" style="text-align: center">
+                    <a href="#"><i class="fa fa-phone" aria-hidden="true" id="phone">
+                    <span>+233-240-000-000</span> </i></a>
+                      
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true" id="mail">
+                     <span>roach@roachgames.com</span></i></a>
+                </div>
+            </div>
+        </div>
+
+        <%--Navigation Bar--%>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a  class="navbar-brand" href="#">
+                    <img src="Images/roach.png" width="60" height="60" />
+                    Roach Games
+                </a>
+                <%--Navigation Icon--%>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collpase navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">roachGames</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">WHO WE ARE</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+                    </ul>
+
+                    <%--Next Navigation Tab--%>
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item-active">
+                            <asp:LinkButton class="nav-link" ID="userLoginButton" runat="server">
+                                Member Login
+                            </asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item-active">
+                            <asp:LinkButton class="nav-link" ID="LogOutButton" runat="server">
+                                Logout
+                            </asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item-active">
+                            <asp:LinkButton class="nav-link" ID="HelloUserButton" runat="server">
+                                Hello User
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+
+        <%--Main Content Page--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+        <%--Main Content Page--%>
+
+
+        <footer>
+            <div id="footer1" class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                       <p>2021 RoachGames &amp; IPMC. All Rights reserved.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                           <p>Powered by : Roach Technologies</p>
+                       </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

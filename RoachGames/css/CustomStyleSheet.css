@@ -1,0 +1,184 @@
+﻿body {
+}
+#social-media{
+    border-bottom: 1px solid gray;
+    height: inherit;
+    background:black;
+}
+
+#facebook {
+    color: #000080;
+    font-size: 17px;
+    margin-right: none;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s;
+}
+
+    #facebook:hover {
+        background: #000080;
+        color: white;
+        border: 1px solid #000080;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+#twitter {
+    color: #1DA1F2;
+    font-size: 17px;
+    margin-right: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+    #twitter:hover {
+        background: #1DA1F2;
+        color: white;
+        border: 1px solid #1DA1F2;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+#instagram {
+    color: #C13584;
+    font-size: 17px;
+    margin-right: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+    #instagram:hover {
+        background: #C13584;
+        color: white;
+        border: 1px solid #C13584;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+#google-plus {
+    color: #d34836;
+    font-size: 17px;
+    margin-right: none;
+    margin-left: 2px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#google-plus:hover {
+        background: #d34836;
+        color: white;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+#linked-in {
+    color: #0072b1;
+    font-size: 17px;
+    margin-right: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#linked-in:hover {
+        background: #0072b1;
+        color: white;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+#skype {
+    color:white;
+    font-size: 25px;
+    margin-right: none;
+    margin-top: 0px;
+    padding: 10px;
+    color: #00aff0;
+}
+
+    #skype span {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 1px;
+        color: white;
+    }
+
+#whatsapp {
+    color: white;
+    margin-left: 0px;
+    font-size: 25px;
+    margin-top: 0px;
+    padding: 10px;
+    color: #25D366;
+}
+
+    #whatsapp span {
+        font-size: 15px;
+        margin-left: 1px;
+        margin-right: 5px;
+        color: white;
+    }
+
+#phone {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    color: #1DA1F2;
+}
+
+    #phone span {
+        font-size: 15px;
+        color: white;
+        margin-left: 3px;
+    }
+
+#mail {
+    margin-left: 0px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    color: #1DA1F2;
+}
+
+#mail span {
+        font-size: 15px;
+        color: white;
+        margin-left: 3px;
+}
+#footer1 {
+    height: 40px;
+    line-height: 40px;
+    background-color: gray;
+    color: white;
+}
+#footer2{
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+}
+.carousel-inner{
+    margin-bottom: 20px;
+}
+.carousel-inner img {
+    height: 600px;
+    width: 100%;
+}
